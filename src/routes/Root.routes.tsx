@@ -4,9 +4,11 @@ import { Navbar } from "../components";
 
 export function Root() {
   return (
-    <div className="bg-primary text-secondary h-screen overflow-y-hidden">
+    <div className="bg-primary flex flex-col items-center text-secondary h-screen">
       <Navbar />
-      <Outlet />
+      <div className="bg-accent w-312">
+        <Outlet />
+      </div>
     </div>
   );
 }

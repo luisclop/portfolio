@@ -8,7 +8,11 @@ export default {
       accent: "#D15F43",
       gray: "#72757E",
     },
-    extend: {},
+    extend: {
+      width: {
+        312: "1248px",
+      },
+    },
   },
   plugins: [],
 };

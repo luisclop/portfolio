@@ -1,5 +1,5 @@
 import React from "react";
 
 export function Home() {
-  return <div className="h-full">Home</div>;
+  return <div className="">Home</div>;
 }

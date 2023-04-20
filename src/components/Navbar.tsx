@@ -3,31 +3,32 @@ import { NavLink } from "react-router-dom";
 
 export function Navbar() {
   return (
-    <nav className="w-full">
-      <ul className="flex justify-end gap-6">
-        <li>
+    <nav className="mt-11 flex h-16 w-312 items-center justify-between">
+      <p className="text-3xl font-bold text-accent">Luis.dev</p>
+      <ul className="gap flex justify-end">
+        <li className="flex h-11 w-20 items-center justify-center">
           <NavLink to="/">
-            <p>Home</p>
+            <p className="font-bold">Home</p>
           </NavLink>
         </li>
-        <li>
+        <li className="flex h-11 w-20 items-center justify-center">
           <NavLink to="/about">
-            <p>About</p>
+            <p className="font-bold">About</p>
           </NavLink>
         </li>
-        <li>
+        <li className="flex h-11 w-20 items-center justify-center">
           <NavLink to="/stack">
-            <p>Stack</p>
+            <p className="font-bold">Stack</p>
           </NavLink>
         </li>
-        <li>
+        <li className="flex h-11 w-20 items-center justify-center">
           <NavLink to="/portfolio">
-            <p>Portfolio</p>
+            <p className="font-bold">Portfolio</p>
           </NavLink>
         </li>
-        <li>
+        <li className="flex h-11 w-20 items-center justify-center">
           <NavLink to="/contact">
-            <p>Contact</p>
+            <p className="font-bold">Contact</p>
           </NavLink>
         </li>
       </ul>

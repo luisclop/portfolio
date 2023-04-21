@@ -8,7 +8,9 @@ export function Navbar() {
       <ul className="flex justify-end gap-6">
         <li className="flex h-11 w-20 items-center justify-center">
           <NavLink
-            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            className={({ isActive }) =>
+              isActive ? "text-accent" : "transition-all hover:text-accent"
+            }
             to="/"
           >
             Home
@@ -16,7 +18,9 @@ export function Navbar() {
         </li>
         <li className="flex h-11 w-20 items-center justify-center">
           <NavLink
-            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            className={({ isActive }) =>
+              isActive ? "text-accent" : "transition-all hover:text-accent"
+            }
             to="/about"
           >
             About
@@ -24,7 +28,9 @@ export function Navbar() {
         </li>
         <li className="flex h-11 w-20 items-center justify-center">
           <NavLink
-            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            className={({ isActive }) =>
+              isActive ? "text-accent" : "transition-all hover:text-accent"
+            }
             to="/stack"
           >
             Stack
@@ -32,7 +38,9 @@ export function Navbar() {
         </li>
         <li className="flex h-11 w-20 items-center justify-center">
           <NavLink
-            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            className={({ isActive }) =>
+              isActive ? "text-accent" : "transition-all hover:text-accent"
+            }
             to="/portfolio"
           >
             Portfolio
@@ -40,7 +48,9 @@ export function Navbar() {
         </li>
         <li className="flex h-11 w-20 items-center justify-center">
           <NavLink
-            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            className={({ isActive }) =>
+              isActive ? "text-accent" : "transition-all hover:text-accent"
+            }
             to="/contact"
           >
             Contact

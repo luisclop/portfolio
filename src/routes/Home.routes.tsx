@@ -1,7 +1,7 @@
 import React from "react";
+import { ProfilePic } from "../components";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
-import photo from "../assets/foto.png";
 
 export function Home() {
   return (
@@ -16,7 +16,7 @@ export function Home() {
         <h2 className="flex h-14 items-center text-4xl font-bold text-accent">
           Full Stack Developer
         </h2>
-        <p className="my-4">
+        <p className="my-4 text-base">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           tincidunt turpis quis quam condimentum, a imperdiet massa pharetra.
           Nam in leo et turpis euismod semper.
@@ -37,11 +37,7 @@ export function Home() {
         </button>
       </article>
       <aside>
-        <img
-          src={photo}
-          alt="photo"
-          className="w-124 rounded-full border-4 border-accent"
-        />
+        <ProfilePic />
       </aside>
     </section>
   );

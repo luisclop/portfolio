@@ -9,7 +9,17 @@ export default {
       gray: "#72757E",
     },
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "Arial", "sans-serif"],
+        montserrat: ["Montserrat", "Arial", "sans-serif"],
+      },
+      fontWeight: {
+        normal: 400,
+        semibold: 600,
+        bold: 700,
+      },
       width: {
+        153: "38.25rem",
         312: "1248px",
       },
     },

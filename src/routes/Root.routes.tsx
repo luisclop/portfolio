@@ -4,11 +4,11 @@ import { Navbar } from "../components";
 
 export function Root() {
   return (
-    <div className="bg-primary flex flex-col items-center text-secondary h-screen">
+    <div className="flex h-screen flex-col items-center bg-primary font-sans text-secondary">
       <Navbar />
-      <div className="bg-accent w-312">
+      <main className="my-auto w-312">
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 }

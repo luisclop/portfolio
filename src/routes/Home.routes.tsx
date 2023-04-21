@@ -1,11 +1,12 @@
 import React from "react";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
+import photo from "../assets/foto.png";
 
 export function Home() {
   return (
-    <div className="flex justify-between">
-      <div className="w-153 font-poppins">
+    <section className="flex justify-between">
+      <article className="w-153 font-poppins">
         <h2 className="flex h-14 items-center text-4xl font-bold ">
           Hello I'm
         </h2>
@@ -34,8 +35,14 @@ export function Home() {
         <button className="mt-8 h-14 w-44 rounded-lg bg-accent ">
           <p className="text-xl font-semibold">Download CV</p>
         </button>
-      </div>
-      <div className="">Photo</div>
-    </div>
+      </article>
+      <aside>
+        <img
+          src={photo}
+          alt="photo"
+          className="w-124 rounded-full border-4 border-accent"
+        />
+      </aside>
+    </section>
   );
 }

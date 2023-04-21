@@ -5,7 +5,9 @@ import { Navbar } from "../components";
 export function Root() {
   return (
     <div className="flex h-screen flex-col items-center bg-primary font-sans text-secondary">
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <main className="my-auto w-312">
         <Outlet />
       </main>

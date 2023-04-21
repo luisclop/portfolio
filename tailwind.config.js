@@ -19,6 +19,7 @@ export default {
         bold: 700,
       },
       width: {
+        124: "31rem",
         153: "38.25rem",
         312: "1248px",
       },

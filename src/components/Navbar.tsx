@@ -5,30 +5,45 @@ export function Navbar() {
   return (
     <nav className="fixed left-0 right-0 top-0 mx-auto mt-11 flex h-16 w-312 items-center justify-between font-montserrat font-bold">
       <p className="text-3xl font-bold text-accent">Luis.dev</p>
-      <ul className="gap flex justify-end">
+      <ul className="flex justify-end gap-6">
         <li className="flex h-11 w-20 items-center justify-center">
-          <NavLink to="/">
-            <p className="font-bold">Home</p>
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            to="/"
+          >
+            Home
           </NavLink>
         </li>
         <li className="flex h-11 w-20 items-center justify-center">
-          <NavLink to="/about">
-            <p className="font-bold">About</p>
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            to="/about"
+          >
+            About
           </NavLink>
         </li>
         <li className="flex h-11 w-20 items-center justify-center">
-          <NavLink to="/stack">
-            <p className="font-bold">Stack</p>
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            to="/stack"
+          >
+            Stack
           </NavLink>
         </li>
         <li className="flex h-11 w-20 items-center justify-center">
-          <NavLink to="/portfolio">
-            <p className="font-bold">Portfolio</p>
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            to="/portfolio"
+          >
+            Portfolio
           </NavLink>
         </li>
         <li className="flex h-11 w-20 items-center justify-center">
-          <NavLink to="/contact">
-            <p className="font-bold">Contact</p>
+          <NavLink
+            className={({ isActive }) => (isActive ? "text-accent" : "")}
+            to="/contact"
+          >
+            Contact
           </NavLink>
         </li>
       </ul>

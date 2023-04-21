@@ -32,7 +32,7 @@ export function Home() {
             <img src={github} alt="github" />
           </a>
         </div>
-        <button className="mt-8 h-14 w-44 rounded-lg bg-accent ">
+        <button className="mt-8 h-14 w-44 rounded-lg border-4 border-accent bg-accent transition-all duration-300 hover:border-4 hover:border-accent hover:bg-primary hover:text-accent">
           <p className="text-xl font-semibold">Download CV</p>
         </button>
       </article>

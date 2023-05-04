@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import { Navbar } from "../components";
 
 export function Root() {
@@ -8,9 +7,7 @@ export function Root() {
       <header>
         <Navbar />
       </header>
-      <main className="my-auto w-312">
-        <Outlet />
-      </main>
+      <main className="w-312">Hola</main>
     </div>
   );
 }

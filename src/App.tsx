@@ -6,13 +6,10 @@ export default function App() {
     {
       path: "/",
       element: <Root />,
-      children: [
-        { index: true, element: <Home /> },
-        { path: "about", element: <About /> },
-        { path: "stack", element: <Stack /> },
-        { path: "portfolio", element: <Portfolio /> },
-        { path: "contact", element: <Contact /> },
-      ],
+    },
+    {
+      path: "/contact",
+      element: <Contact />,
     },
   ]);
 

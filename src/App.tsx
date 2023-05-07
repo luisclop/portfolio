@@ -4,7 +4,7 @@ import { Root, Home, About, Portfolio, Contact } from "./routes";
 export default function App() {
   const router = createBrowserRouter([
     {
-      path: "/portfolio",
+      path: "/",
       element: <Root />,
     },
     {

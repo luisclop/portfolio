@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -9,9 +10,11 @@ export function Footer() {
           Looking for a reliable developer to bring your project to life? Look
           no further!
         </p>
-        <button className="ml-8 h-12 w-44 rounded-full border-4 border-accent bg-accent text-secondary transition-all duration-300 hover:bg-secondary hover:text-accent">
-          Let's talk
-        </button>
+        <Link to={"/contact"}>
+          <button className="ml-8 h-12 w-44 rounded-full border-4 border-accent bg-accent text-secondary transition-all duration-300 hover:bg-secondary hover:text-accent">
+            Let's talk
+          </button>
+        </Link>
       </article>
       <div className="h-56 bg-accent"></div>
     </footer>

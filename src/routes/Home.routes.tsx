@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 
@@ -21,9 +22,11 @@ export function Home() {
           backend development, using technologies such as React, Node, Express,
           MongoDB, among others.
         </p>
-        <button className="mt-8 h-14 w-48 rounded-lg border-4 border-accent bg-accent transition-all duration-300 hover:border-4 hover:border-accent hover:bg-primary hover:text-accent">
-          <p className="text-xl font-semibold">Get in touch</p>
-        </button>
+        <Link to={"/contact"}>
+          <button className="mt-8 h-14 w-48 rounded-lg border-4 border-accent bg-accent transition-all duration-300 hover:border-4 hover:border-accent hover:bg-primary hover:text-accent">
+            <p className="text-xl font-semibold">Get in touch</p>
+          </button>
+        </Link>
       </article>
       <aside className="absolute bottom-0 left-20 flex flex-col items-center gap-6">
         <a href="https://www.linkedin.com/in/luis-lopez-mollo/" target="_blank">

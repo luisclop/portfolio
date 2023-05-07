@@ -28,11 +28,8 @@ export function Contact() {
     toast.success("Your message has been sent successfully!");
   };
 
-  const notify = () => toast("Here is your toast.");
-
   return (
     <main className="flex h-screen w-screen flex-col items-center justify-center gap-24 bg-primary font-poppins font-normal text-secondary">
-      <button onClick={notify}>Test</button>
       <h1 className="w-4/5 text-center text-4xl">
         I'm excited to learn about your poject. Ready to get started?
       </h1>
@@ -103,6 +100,7 @@ export function Contact() {
           Send
         </button>
       </form>
+      <Toaster />
     </main>
   );
 }

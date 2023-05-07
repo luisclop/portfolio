@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Root, Home, About, Stack, Portfolio, Contact } from "./routes";
+import { Root, Home, About, Portfolio, Contact } from "./routes";
 
 export default function App() {
   const router = createBrowserRouter([

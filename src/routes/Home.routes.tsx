@@ -5,7 +5,7 @@ import github from "../assets/github.png";
 export function Home() {
   return (
     <section className="flex h-screen items-center justify-center">
-      <article className="w-3/4 font-poppins">
+      <article className="w-3/5 font-poppins">
         <h2 className="flex items-center text-lg font-bold text-gray ">
           Hello I'm
         </h2>
@@ -25,7 +25,7 @@ export function Home() {
           <p className="text-xl font-semibold">Get in touch</p>
         </button>
       </article>
-      <aside className="absolute items-center bottom-0 left-20 flex flex-col gap-6">
+      <aside className="absolute bottom-0 left-20 flex flex-col items-center gap-6">
         <a href="https://www.linkedin.com/in/luis-lopez-mollo/" target="_blank">
           <img src={linkedin} alt="linkedin" />
         </a>

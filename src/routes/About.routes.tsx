@@ -1,35 +1,90 @@
 import React from "react";
 import { ProfilePic } from "../components";
+import brush from "../assets/brush.png";
+import code from "../assets/code.png";
+import server from "../assets/driver.png";
 
 export function About() {
   return (
-    <section className="flex justify-between">
-      <aside>
-        <ProfilePic />
-      </aside>
-      <article className="w-153 font-poppins">
-        <h1 className="mb-2 text-6xl font-bold">
-          About <span className="text-accent">Me</span>
-        </h1>
-        <h2 className="text-xl font-bold">
-          A Full Stack Developer with a Passion for Building Web Applications
-        </h2>
-        <p className="py-6 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          justo leo, viverra nec nisl ut, auctor ornare nisl. Maecenas accumsan
-          eu quam et euismod. In ultricies, orci vel consequat porttitor, mi
-          urna fermentum enim, nec vehicula tellus mauris quis metus. Morbi nec
-          nisl est. Quisque posuere pretium lacus, non suscipit leo tincidunt
-          in. Nunc lacinia accumsan tortor, pulvinar gravida sapien placerat et.
-          Aenean sit amet faucibus lacus. Fusce ornare lorem vel nibh egestas
-          imperdiet. Cras semper mauris odio, vel molestie nibh vehicula quis.
-          Phasellus arcu erat, finibus rhoncus ante a, sollicitudin sodales
-          lectus. Vestibulum sed urna felis.
-        </p>
-        <button className="h-14 w-44 rounded-lg border-4 border-accent bg-accent transition-all duration-300 hover:border-4 hover:border-accent hover:bg-primary hover:text-accent">
-          <p className="text-xl font-semibold">Read More</p>
-        </button>
-      </article>
+    <section className="w-full bg-primary">
+      <div className="flex w-full items-center justify-center gap-32 bg-accent p-14">
+        <aside>
+          <ProfilePic />
+        </aside>
+        <article className="flex w-1/2 flex-col items-center gap-5 pb-64 pt-36 text-center font-poppins">
+          <h1 className="mb-2 text-4xl font-bold">About Me</h1>
+          <p className="py-3 text-base">
+            I am a final cycle mechatronic engineering student passionate about
+            programming and software development. During my career, I discovered
+            an interest in technological innovation in the software field and
+            the possibility of implementing ideas through code.
+          </p>
+          <p>
+            In particular, I love working on web development projects, as I
+            believe the web is a free and inclusive space that allows anyone to
+            access the information and tools they need. Through web development,
+            I can contribute to creating solutions that are accessible to
+            everyone, regardless of their geographic location or economic
+            situation.
+          </p>
+          <p>
+            Furthermore, I strongly believe in the importance of continuing to
+            learn and improving my skills. I stay updated with the latest trends
+            and technologies in software development and am always looking for
+            new technologies to add to my knowledge base.
+          </p>
+        </article>
+      </div>
+      <div className="relative bottom-40 mx-auto flex w-4/5 justify-between rounded-3xl bg-secondary py-16 text-center text-xl text-gray">
+        <div className="flex w-full flex-col items-center justify-start gap-6 px-4 font-semibold">
+          <img src={brush} />
+          <p className="text-2xl text-primary">Designer</p>
+          <p className="text-lg font-normal">
+            I have experience in user research, wireframing, prototyping and
+            design systems
+          </p>
+          <p className="text-accent">Things I enjoy design and tools I use:</p>
+          <ul>
+            <li className="my-6">Web</li>
+            <li className="my-6">Mobile</li>
+            <li className="my-6">UI/UX</li>
+            <li className="my-6">Figma</li>
+          </ul>
+        </div>
+        <div className="flex w-full flex-col items-center justify-start gap-6 px-4 font-semibold">
+          <img src={code} />
+          <p className="text-2xl text-primary">Frontend Developer</p>
+          <p className="text-lg font-normal">
+            I have experience in implementing design from scratch to build
+            dynamic and responsive user interfaces.
+          </p>
+          <p className="text-accent">Languages and frameworks I use:</p>
+          <ul className="">
+            <li className="my-6">HTML</li>
+            <li className="my-6">CSS</li>
+            <li className="my-6">Javascript</li>
+            <li className="my-6">React</li>
+            <li className="my-6">Typescript</li>
+            <li className="my-6">Tailwind CSS</li>
+          </ul>
+        </div>
+        <div className="flex w-full flex-col items-center justify-start gap-6 px-4 font-semibold">
+          <img src={server} />
+          <p className="text-2xl text-primary">Backend Developer</p>
+          <p className="text-lg font-normal">
+            I have experience in creating scalable web applications,
+            implementing server-side architecture and APIs
+          </p>
+          <p className="text-accent">Languages and frameworks I use:</p>
+          <ul className="">
+            <li className="my-6">Node JS</li>
+            <li className="my-6">Express JS</li>
+            <li className="my-6">MongoDB</li>
+            <li className="my-6">Mongoose</li>
+            <li className="my-6">Socket.io</li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 }

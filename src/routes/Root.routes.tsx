@@ -5,11 +5,11 @@ import { About } from "./About.routes";
 
 export function Root() {
   return (
-    <div className="flex flex-col items-center bg-primary font-sans text-secondary">
+    <div className="flex w-full flex-col items-center bg-primary font-sans text-secondary">
       <header>
         <Navbar />
       </header>
-      <main className="w-312">
+      <main className="font-poppins">
         <Home />
         <About />
       </main>
